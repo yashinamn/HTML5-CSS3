@@ -309,3 +309,27 @@ button {
     line-height: 24px;
     text-transform: uppercase;
 }
+
+.contact-info {
+    color: #fff;
+    font-family: "Arial MT";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.icon {
+    font-size: 26px;
+}
+
+.icons {
+    font-size: 40px;
+}
+
+.contacts_p {
+    margin-bottom: 20px;
+}
+
+.fas, .fab {
+    margin-right: 5px;
+}
