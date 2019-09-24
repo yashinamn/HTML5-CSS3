@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #445162;
-    height: 323px;
+
     flex-grow: 0;
 }
 
@@ -411,6 +411,13 @@ button:hover {
     font-size: 40px;
 }
 
+.icon:hover {
+    opacity: 0.7;
+}
+
+.icons:hover {
+    opacity: 0.7;
+}
 .contacts_p {
     margin-bottom: 20px;
 }
@@ -418,4 +425,59 @@ button:hover {
 .fas,
 .fab {
     margin-right: 5px;
+}
+
+@media screen  and (max-width: 768px) {
+    header {
+        width: 768px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-img {
+        margin-top: 20px;
+    }
+    
+    .about-product {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 768px;
+        align-items: center;
+    }
+
+    .about-product__article, .about-product__p {
+        text-align: center;
+    }   
+    
+    .dignity, .scrinshots, .Reviews, .BuyItNow, .contacts {
+        width: 768px;
+    }
+
+    .dignity_columns,
+    .scrinshots__columns,
+    .Reviews__columns,
+    .contacts__columns
+     {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+ 
+
+    .BuyItNow__items {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .BuyItNow__item {
+        margin: 0 5px;
+    }
+
+    .contact-info {
+        margin-top: 20px;;
+    }
+
+
 }
