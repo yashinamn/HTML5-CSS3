@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
 }
@@ -20,12 +26,17 @@ header {
     justify-content: space-between;
     background-color: #445162;
     height: 323px;
+    flex-grow: 0;
+}
+
+main {
+    flex-grow: 1;
 }
 
 .product-name {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 60px;
     font-weight: 400;
 }
@@ -33,7 +44,7 @@ header {
 .header-list {
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     color: #fff;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
@@ -56,7 +67,7 @@ header {
 
 .about-product__article {
     color: #445161;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -65,7 +76,7 @@ header {
 
 .about-product__p {
     color: #333333;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -84,7 +95,6 @@ header {
     box-sizing: border-box;
     padding: 50px;
     width: 1280px;
-
     background-color: #f5f5f5;
 }
 
@@ -95,7 +105,7 @@ header {
 
 .dignity__heading {
     color: #445161;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -109,12 +119,13 @@ header {
 
 .dignity-list {
     color: #333333;
-    font-family: "Arial MT";
+    padding-left: 40px;
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 35px;
-    list-style-image: url(img/plus_icon.png);
+    background: url(img/plus_icon.png) no-repeat left 5px;
 }
 
 .scrinshots {
@@ -126,7 +137,7 @@ header {
 
 .scrinshots__heading {
     color: #445161;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -158,7 +169,7 @@ header {
 
 .screenshots__text_heading {
     color: #445161;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -166,13 +177,83 @@ header {
 
 .scrinshots__p {
     color: #333333;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
 
+.BuyItNow {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 1280px;
+}
 
+.BuyItNow__heading {
+    color: #445161;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.BuyItNow__items {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.BuyItNow__item {
+    background-color: #445162;
+    box-sizing: border-box;
+    border: 1px solid #445162;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 22px;
+}
+
+.Item_head {
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+.Item_price {
+    color: #445162;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 71px;
+    text-align: center;
+    background-color: #ffffff;
+    border-left: 1px solid #445161;
+    box-sizing: border-box;
+}
+
+.first-prise {
+border-right: 1px solid #445161;
+    border-left: none;
+}
+
+.Item_text {
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 19px;
+}
+
+.button-buy {
+    margin: 0 7% 20px;
+    width: 86%;
+}
 
 .Reviews {
     margin: 0 auto;
@@ -184,7 +265,7 @@ header {
 
 .Reviews__heading {
     color: #445161;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -222,7 +303,7 @@ header {
 
 .Reviews__text_heading {
     color: #445161;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
@@ -230,7 +311,7 @@ header {
 
 .Reviews__p {
     color: #333333;
-    font-family: "Arial - Italic MT";
+    font-family: 'PT Sans', sans-serif;
     font-style: italic;
     font-size: 14px;
     font-weight: 400;
@@ -239,7 +320,7 @@ header {
 
 figcaption {
     color: #989898;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -252,11 +333,12 @@ figcaption {
     padding: 50px 245px;
     width: 1280px;
     background-color: #445162;
+    flex-grow: 0;
 }
 
 .contacts__heading {
     color: #fff;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -277,15 +359,15 @@ figcaption {
 
 .contact-input-field {
     color: #445162;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-	background-color: white;
-	border-radius: 5px;
-	margin-bottom: 21px;
-	width: 500px;
-	height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 21px;
+    width: 500px;
+    height: 40px;
     padding: 0 10px;
     border: none;
     box-sizing: border-box;
@@ -301,18 +383,21 @@ button {
     border: none;
     border-radius: 5px;
     background-color: #fff;
-
     color: #445162;
-    font-family: "Arial - Bold MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
 }
 
+button:hover {
+    opacity: 0.7;
+}
+
 .contact-info {
     color: #fff;
-    font-family: "Arial MT";
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -330,6 +415,7 @@ button {
     margin-bottom: 20px;
 }
 
-.fas, .fab {
+.fas,
+.fab {
     margin-right: 5px;
 }
